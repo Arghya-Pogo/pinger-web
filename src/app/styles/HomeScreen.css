@@ -1,0 +1,91 @@
+#home{
+    display: flex;
+    height: 100vh;
+}
+
+.profile_area{
+    width: 350px;
+    border-right: 1px solid #EEEEEE;
+    overflow-y: scroll;
+}
+
+.content_main{
+    flex: 1;
+}
+
+.form_area{
+    width: 350px;
+    border-left: 1px solid #EEEEEE;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.form_box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_lead{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.form_input{
+    border: none;
+    width: 90%;
+    resize: none;
+    height: 100%;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.form_buttons{
+    border-top: 1px solid #EEEEEE;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_button__container{
+    padding: 4px;
+    border-radius: 60px;
+    border: 5px solid transparent;
+    width: fit-content;
+}
+
+.form_button__container.animate{
+    animation: animateButton 3s linear;
+}
+
+@keyframes animateButton{
+    0%{
+        border: 5px solid transparent;
+    }
+    100%{
+        border: 5px solid #2357f3;
+    }
+}
+
+.animated_button{
+    background-color: #2357f3;
+    color: #FFF;
+    border: none;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 5px 20px #2357f33f;
+}
+
+

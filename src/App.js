@@ -1,9 +1,17 @@
 import React, {  } from 'react';
+import { DataProvider } from './app/config/context';
+import HomeScreen from './app/screens/HomeScreen';
+
+
 
 
 const App = (props) => {
+
+
     return(
-        <div>App</div>
+        <DataProvider>
+            <HomeScreen />
+        </DataProvider>
     );
 }
 

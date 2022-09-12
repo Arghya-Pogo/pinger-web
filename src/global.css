@@ -6,3 +6,17 @@
     outline: none !important;
     margin: 0;
 }
+
+body{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#root{
+    height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
